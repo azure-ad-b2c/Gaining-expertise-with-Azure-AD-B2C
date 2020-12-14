@@ -1,0 +1,14 @@
+﻿<ul class="nav navbar-nav navbar-right">
+
+    @*@if (!((System.Security.Claims.ClaimsIdentity)User.Identity).Claims.Any(x => x.Type == "http://schemas.microsoft.com/identity/claims/identityprovider"))
+    {*@
+        <li>
+            @Html.ActionLink("Edit Profile", "EditProfile", "Home")
+        </li>
+
+        <li>
+
+            @Html.ActionLink("Reset Password", "ResetPassword", "Home")
+        </li>
+    @*}*@
+</ul>
